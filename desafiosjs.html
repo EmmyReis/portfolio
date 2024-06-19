@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
   <title>Dev - JS</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -44,7 +43,6 @@
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="d-flex flex-column">
-
       <div class="profile">
         <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Emmily Reis</a></h1>
@@ -55,23 +53,18 @@
         </div>
       </div>
 
-
       <nav id="navbar" class="nav-menu navbar">
         <ul>
           <li><a href="index.html" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-
-
         </ul>
       </nav><!-- .nav-menu -->
     </div>
   </header><!-- End Header -->
 
   <main id="main">
-
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
-
         <div class="d-flex justify-content-between align-items-center">
           <h2>50 Projects In 50 Days - HTML, CSS & JavaScript</h2>
           <ol>
@@ -79,29 +72,30 @@
             <li>50 Projects In 50 Days - HTML, CSS & JavaScript</li>
           </ol>
         </div>
-
       </div>
     </section><!-- End Breadcrumbs -->
 
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
-
         <div class="row gy-4">
-
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
-
                 <div class="swiper-slide">
-                  <video width="720" height="500" controls src="assets/img/portfolio/desafio js.mp4" alt="">
+                  <video width="720" height="500" controls>
+                    <source src="assets/img/portfolio/desafio js.mp4" type="video/mp4">
+                  </video>
                 </div>
-
-
-
-
+                <div class="swiper-slide">
+                  <video width="720" height="500" controls>
+                    <source src="assets/img/portfolio/desafio js_2.mp4" type="video/mp4">
+                  </video>
+                </div>
               </div>
               <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
           </div>
 
@@ -122,12 +116,9 @@
               </p>
             </div>
           </div>
-
         </div>
-
       </div>
     </section><!-- End Portfolio Details Section -->
-
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -141,10 +132,9 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-       
       </div>
     </div>
-  </footer><!-- End  Footer -->
+  </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -162,6 +152,18 @@
   <!-- Template Main JS File -->
   <script src="assets/js/mainvideo.js"></script>
 
+  <script>
+    var swiper = new Swiper(".portfolio-details-slider", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 </body>
 
 </html>

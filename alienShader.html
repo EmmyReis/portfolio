@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
   <title>Tech Art - Shader</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -26,14 +25,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Updated: Jan 29 2024 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -44,7 +35,6 @@
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="d-flex flex-column">
-
       <div class="profile">
         <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Emmily Reis</a></h1>
@@ -55,23 +45,18 @@
         </div>
       </div>
 
-
       <nav id="navbar" class="nav-menu navbar">
         <ul>
           <li><a href="index.html" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-
-
         </ul>
       </nav><!-- .nav-menu -->
     </div>
   </header><!-- End Header -->
 
   <main id="main">
-
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
-
         <div class="d-flex justify-content-between align-items-center">
           <h2>Shader Graph</h2>
           <ol>
@@ -79,36 +64,29 @@
             <li>Shader Graph</li>
           </ol>
         </div>
-
       </div>
     </section><!-- End Breadcrumbs -->
 
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
-
         <div class="row gy-4">
-
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
-
                 <div class="swiper-slide">
-                  <video width="720" height="500" controls src="assets/img/portfolio/dissolve-shader-aliien-2023-08-15-16-49-55-compressed-with-flexclip.mp4" alt="">
+                  <video width="720" height="500" controls src="assets/img/portfolio/dissolve-shader-aliien-2023-08-15-16-49-55-compressed-with-flexclip.mp4" alt=""></video>
                 </div>
-
-
                 <div class="swiper-slide">
-                  <video width="720" height="500" controls src="assets/img/portfolio/dissolvecontrol.mp4" alt="">
+                  <video width="720" height="500" controls src="assets/img/portfolio/dissolvecontrol.mp4" alt=""></video>
                 </div>
-
-                
                 <div class="swiper-slide">
-                  <video width="720" height="500" controls src="assets/img/portfolio/2d-fire-project-alien-dissolve-windows-mac-linux-unity-2021.mp4" alt="">
+                  <video width="720" height="500" controls src="assets/img/portfolio/2d-fire-project-alien-dissolve-windows-mac-linux-unity-2021.mp4" alt=""></video>
                 </div>
-
               </div>
               <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
           </div>
 
@@ -125,17 +103,13 @@
             <div class="portfolio-description">
               <h2>[Unity] - 2D Dissolve Shader Graph</h2>
               <p>
-                This personal project that aimed to improve my shader and technology skills, using a 2D render that I took in zbrush from a modeling of an Alien that I had done some time ago. I had a lot of fun working on it, I love the idea of ​​being able to mix technology and art. It inspires me to continue studying and deepening my studies in some programming languages ​​like C++ and C#.
-Special thanks to my friend and work supervisor Ricardo Duaik who provided feedback and motivation to study tech art!
+                This personal project aimed to improve my shader and technology skills, using a 2D render that I took in ZBrush from a modeling of an Alien that I had done some time ago. I had a lot of fun working on it; I love the idea of being able to mix technology and art. It inspires me to continue studying and deepening my studies in programming languages like C++ and C#. Special thanks to my friend and work supervisor Ricardo Duaik who provided feedback and motivation to study tech art!
               </p>
             </div>
           </div>
-
         </div>
-
       </div>
     </section><!-- End Portfolio Details Section -->
-
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -149,10 +123,9 @@ Special thanks to my friend and work supervisor Ricardo Duaik who provided feedb
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-       
       </div>
     </div>
-  </footer><!-- End  Footer -->
+  </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -170,6 +143,17 @@ Special thanks to my friend and work supervisor Ricardo Duaik who provided feedb
   <!-- Template Main JS File -->
   <script src="assets/js/mainvideo.js"></script>
 
+  <script>
+    var swiper = new Swiper(".portfolio-details-slider", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 </body>
-
 </html>
