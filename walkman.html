@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>3D - walkman</title>
+  <title>3D - Walkman</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -26,14 +25,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Updated: Jan 29 2024 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -44,7 +35,6 @@
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="d-flex flex-column">
-
       <div class="profile">
         <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Emmily Reis</a></h1>
@@ -55,23 +45,18 @@
         </div>
       </div>
 
-
       <nav id="navbar" class="nav-menu navbar">
         <ul>
           <li><a href="index.html" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-
-
         </ul>
       </nav><!-- .nav-menu -->
     </div>
   </header><!-- End Header -->
 
   <main id="main">
-
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
-
         <div class="d-flex justify-content-between align-items-center">
           <h2>Walkman</h2>
           <ol>
@@ -79,31 +64,36 @@
             <li>Walkman</li>
           </ol>
         </div>
-
       </div>
     </section><!-- End Breadcrumbs -->
 
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
-
         <div class="row gy-4">
-
-          <div class="col-lg-8">
+          <div class="col-lg-8 d-flex align-items-center">
             <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
+              <div class="swiper-wrapper">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-5.jpg" alt="">
+                  <img src="assets/img/portfolio/HighresScreenshot00000.png" alt="">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-details-6.jpg" alt="">
+                  <img src="assets/img/portfolio/HighresScreenshot00001.png" alt="">
                 </div>
-
-
+                <div class="swiper-slide">
+                  <video width="720" height="500" controls src="assets/img/portfolio/Maps Subs.mp4" alt=""></video>
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/HighresScreenshot00007.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/render maps.jpg" alt="">
+                </div>
               </div>
               <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
           </div>
 
@@ -114,7 +104,7 @@
                 <li><strong>Category</strong>: 3D</li>
                 <li><strong>Client</strong>: Personal Project</li>
                 <li><strong>Project date</strong>: 2023</li>
-                <li><strong>Project URL</strong>: <a href="https://www.artstation.com/artwork/DArW5E">https://www.artstation.com/artwork/DArW5E</a></li>
+                <li><strong>Project URL</strong>: </li>
               </ul>
             </div>
             <div class="portfolio-description">
@@ -124,12 +114,9 @@
               </p>
             </div>
           </div>
-
         </div>
-
       </div>
     </section><!-- End Portfolio Details Section -->
-
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -143,10 +130,9 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-       
       </div>
     </div>
-  </footer><!-- End  Footer -->
+  </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -162,8 +148,19 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/mainvideo.js"></script>
 
+  <script>
+    var swiper = new Swiper(".portfolio-details-slider", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
 </body>
-
 </html>
